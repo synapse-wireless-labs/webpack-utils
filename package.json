@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist",
-    "copy": "cpy package.json ./dist",
+    "copy": "cpy package.json CHANGELOG.md LICENSE README.md ./dist",
     "build:ts": "tsc",
     "build": "npm run clean && npm run build:ts",
     "preversion": "npm run build",
