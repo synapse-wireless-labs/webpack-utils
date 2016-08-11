@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "mapRoot": "",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "sourceRoot": "/",
+    "target": "es5",
+    "lib": ["es2015"],
+    "types": [
+      "node"
+    ]
+  },
+  "files": [
+    "manual-typings.d.ts",
+    "src/index.ts"
+  ]
+}

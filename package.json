@@ -1,0 +1,40 @@
+{
+  "name": "synlabs-webpack-utils",
+  "version": "0.0.8",
+  "description": "Common utilities for Synapse Wireless Labs Webpack-based projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "copy": "cpy package.json ./dist",
+    "build:ts": "tsc",
+    "build": "npm run clean && npm run build:ts",
+    "preversion": "npm run build",
+    "postversion": "npm run copy"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "awesome-typescript-loader": "^2.1.1",
+    "babel-loader": "6.2.4",
+    "css-loader": "0.23.1",
+    "eslint-loader": "^1.3.0",
+    "extract-text-webpack-plugin": "^2.0.0-beta.3",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.3",
+    "json-loader": "^0.5.4",
+    "node-sass": "^3.8.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^4.0.0",
+    "script-loader": "^0.7.0",
+    "style-loader": "0.13.1",
+    "typescript": "^2.0.0",
+    "url-loader": "^0.5.7"
+  },
+  "devDependencies": {
+    "@types/node": "^4.0.30",
+    "cpy-cli": "^1.0.1",
+    "rimraf": "^2.5.4",
+    "typescript": "^2.0.0"
+  }
+}
