@@ -1,6 +1,6 @@
 {
   "name": "synlabs-webpack-utils",
-  "version": "0.0.8",
+  "version": "0.0.1",
   "description": "Common utilities for Synapse Wireless Labs Webpack-based projects",
   "main": "index.js",
   "scripts": {
