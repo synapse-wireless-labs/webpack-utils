@@ -47,11 +47,7 @@ export function createLoaders(config: {
     },
     {
       test: /\.scss$/,
-      loader: config.production ?
-        ExtractTextPlugin.extract({
-          fallbackLoader: 'style-loader',
-          loader: 'css-loader?module!sass-loader'
-        }) : 'style-loader!css-loader?module!sass-loader'
+      loaders: ["style", "css?sourceMap", "sass?sourceMap"]
     },
     {
       test: /\.html$/,
